@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  jenkin_pipeline_test:
+    image: ${DOCKER_REGISTRY}jenkinpipelinetest
+    build:
+      context: .
+      dockerfile: jenkin_pipeline_test/Dockerfile
